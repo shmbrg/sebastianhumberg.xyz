@@ -27,6 +27,7 @@ p {
 	font-family: "Courier New";
 	font-size: 2rem;
 	font-variant-ligatures: common-ligatures;
+	width: 70%;
 }
 
 .row {
