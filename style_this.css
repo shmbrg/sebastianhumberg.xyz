@@ -12,9 +12,9 @@ img {
 	max-width: 100%;
 	width: auto; */
 	margin: 10vh auto 10vh auto;
-	max-width: 100%;
-	/*padding: 0 40px; */
-	width: 150ch;
+	/*max-width: 100%;
+	padding: 0 40px; */
+	width: 80%;
 }
 
 .responsive {
