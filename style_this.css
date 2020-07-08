@@ -33,6 +33,7 @@ p {
 	font-variant-ligatures: common-ligatures;
 	width: 70%;
 	margin:0 auto;
+	text-align: justify;
 }
 
 .row {
