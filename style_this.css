@@ -29,9 +29,12 @@ p {
 	font-variant-ligatures: common-ligatures;
 }
 
+.row {
+  display: flex;
+}
+
 .column {
-  float: left;
-  width: 33.33%;
+  flex: 33.33%;
   padding: 5px;
 }
 
