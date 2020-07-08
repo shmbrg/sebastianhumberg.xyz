@@ -10,7 +10,7 @@ img {
 }
 
 .container {
-	margin: 100vh auto 100vh auto;
+	margin: 10vh auto 10vh auto;
 	max-width: 100%;
 	width: auto;
 }
@@ -27,5 +27,5 @@ a {
 
 p { 
 	text-align: left;
-	margin: 10px auto 10px auto;
+	max-width: 80%;
 }
