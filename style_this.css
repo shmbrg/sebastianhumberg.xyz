@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: lightslategrey;
   font-family: "Courier New";
 }
 
@@ -8,8 +8,14 @@ img {
 }
 
 .container {
-			margin: 25vh auto 10vh auto;
-			max-width: 100%;
-			padding: 0 20px;
-			width: 40ch;
-		}
+	margin: 25vh auto 10vh auto;
+	max-width: 100%;
+	padding: 0 20px;
+	width: 40ch;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
