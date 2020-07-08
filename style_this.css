@@ -15,7 +15,7 @@ img {
 }
 
 .responsive {
-  width: 10%;
+  width: auto;
   max-width: 100px;
   height: auto;
 }
