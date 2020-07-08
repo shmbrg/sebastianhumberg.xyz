@@ -1,13 +1,13 @@
 body {
-  background-color: lightslategrey;
-  font-family: "Courier New";
-  font-size: 2rem;
-  line-height: 1.4;
-  text-align: center;
+	background-color: lightslategrey;
+	font-family: "Courier New";
+	font-size: 2rem;
+	line-height: 1.4;
+	text-align: center;
 }
 
 img {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .container {
@@ -17,11 +17,15 @@ img {
 }
 
 .responsive {
-  width: auto;
-  max-width: 300px;
-  height: auto;
+	width: auto;
+	max-width: 300px;
+	height: auto;
 }
 
 a { 
 	color: currentColor; 
+}
+
+p { 
+	text-align: center;
 }
