@@ -12,7 +12,7 @@ img {
 	width: auto; */
 	margin: 10vh auto 10vh auto;
 	max-width: 100%;
-	padding: 0 40px;
+	/*padding: 0 40px; */
 	width: 150ch;
 }
 
@@ -31,6 +31,7 @@ p {
 	font-size: 2rem;
 	font-variant-ligatures: common-ligatures;
 	width: 70%;
+	margin:0 auto;
 }
 
 .row {
