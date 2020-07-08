@@ -31,7 +31,8 @@ p {
 
 .row {
   	display: flex;
-	width: 50%;
+	width: 20%;
+	align-content: center;
 }
 
 .column {
