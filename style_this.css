@@ -13,8 +13,8 @@ img {
 	width: auto; */
 	margin: 10vh auto 10vh auto;
 	max-width: 100%;
-	/*padding: 0 20px;*/
-	width: 100ch;
+	padding: 0 40px;
+	width: 150ch;
 }
 
 .responsive {
@@ -28,7 +28,7 @@ a {
 }
 
 p {
-	font-family: "Courier New";
+	font-family: "Courier New", Courier, monospace;
 	font-size: 2rem;
 	font-variant-ligatures: common-ligatures;
 	width: 70%;
