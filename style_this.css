@@ -1,8 +1,6 @@
 body {
 	background-color: lightslategrey;
-	font-family: "Courier New";
-	font-size: 2rem;
-	text-align: center;
+	font-variant-ligatures: common-ligatures;
 }
 
 img {
@@ -23,6 +21,12 @@ img {
 
 a { 
 	color: currentColor; 
+}
+
+p {
+	font-family: Courier;
+	font-size: 2rem;
+	text-align: center;
 }
 
 
