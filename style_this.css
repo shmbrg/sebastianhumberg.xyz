@@ -33,6 +33,7 @@ p {
   	display: flex;
 	width: 20%;
 	align-content: center;
+	justify-content: center;
 }
 
 .column {
