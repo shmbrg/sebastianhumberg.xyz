@@ -1,51 +1,256 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style_this.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<title>Sebastian Humberg</title>
-</head>
-	
+<html lang="en">
 
-<body>
-	<div class="container">
-		<header>
-			<img src="Sebastian_Humberg_comp.jpg" alt="Avatar" class="responsive"> 
-		</header>
-		<main>
-			<p>
-				hello, <span class="highlightme">i am SEBASTIAN HUMBERG</span> and this is my personal website.
-				i studied mathematics, econometrics and statistics.
-				i lived in krefeld, brisbane, aachen, wuhan, ijsselmeer, kiel, berlin and am currently in hamburg.
-				i worked for this <a href="https://www.stat-econ.uni-kiel.de/de" target="_blank" rel="noopener nofollow">university institute</a>, 
-				the weather based predictive analytics company <a href="https://www.meteolytix.de" target="_blank" rel="noopener nofollow">meteolytix</a>, 
-				the online news publisher <a href="https://www.zeit.de/index" target="_blank" rel="noopener nofollow">zeit online</a> 
-				and am now employed at the digital agency <a href="https://www.diconium.com" target="_blank" rel="noopener nofollow">diconium</a> being part of transitioning <a href="https://www.volkswagen.de" target="_blank" rel="noopener nofollow">volkswagen</a> to a software centric company.
-				<span class="highlightme">i work with data.</span>
-				for more information click on an icon you recognize.
-			</p>
-		</main>
-	</div>
-	
-	<div class="row">
-  		<div class="column">
-			<a href="https://www.xing.com/profile/Sebastian_Humberg/cv" target="_blank" rel="noopener nofollow">
-  				<i class="fa fa-xing" style="font-size:48px"></i>
-			</a>
- 		</div>
- 		<div class="column">
-			<a href="https://www.linkedin.com/in/shmbrg/" target="_blank" rel="noopener nofollow">
-  				<i class="fa fa-linkedin" style="font-size:48px"></i>
-			</a>
-  		</div>
- 		<div class="column">
-			<a href="https://github.com/shmbrg" target="_blank" rel="noopener nofollow">
-  				<i class="fa fa-github" style="font-size:48px"></i>
-			</a>
-  		</div>
-	</div> 
-	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Sebastian_Humberg_comp.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/Sebastian_Humberg_32x32.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="/Sebastian_Humberg_16x16.jpg">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <title>Sebastian Humberg</title>
+    <meta name="title" content="Sebastian Humberg">
+    <meta name="description" content="Sebastian Humberg's personal site">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastianhumberg.xyz/">
+    <meta property="og:title">
+    <meta property="og:description" content="Sebastian Humberg's personal site.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sebastianhumberg.xyz/">
+    <meta property="twitter:title">
+    <meta property="twitter:description" content="Sebastian Humberg's personal site.">
+
+    <!-- set theme -->
+    <script>
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        const localTheme = localStorage.getItem('theme')
+        if (!localTheme) {
+            localStorage.setItem('theme', systemTheme)
+            document.documentElement.classList.add(systemTheme)
+        }
+        if (localTheme === 'dark') {
+            document.documentElement.classList.add(localTheme)
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/asset.042d2a28.css">
+    </link>
+</head>
+
+<body class="bg-slate-50 dark:bg-gradient-to-br dark:from-slate-900 dark:to-black dark:text-slate-50 min-h-screen">
+    <header class="relative pt-20 pb-10 px-2 max-w-2xl mx-auto">
+        <div class="absolute right-2 top-2">
+            <button id="theme-toggle" onclick="toggleTheme()"
+                class="hover p-2 rounded-full transition-all dark:text-slate-400 text-slate-700 opacity-80 hover:opacity-100">
+                <svg viewBox="0 0 256 256" class="w-6" astro-icon="ph:sun-horizon">
+                    <path fill="currentColor"
+                        d="M77.7 43.6a8.1 8.1 0 0 1 4.4-10.5 7.9 7.9 0 0 1 10.4 4.4l7.7 18.4a8.1 8.1 0 0 1-4.3 10.5 8.5 8.5 0 0 1-3.1.6 8.2 8.2 0 0 1-7.4-4.9zm-56.2 64.9 18.4 7.7a8.5 8.5 0 0 0 3.1.6 8 8 0 0 0 3.1-15.4l-18.5-7.7a8.1 8.1 0 0 0-10.5 4.4 7.9 7.9 0 0 0 4.4 10.4zm191.5 8.3a8.5 8.5 0 0 0 3.1-.6l18.4-7.7a7.9 7.9 0 0 0 4.4-10.4 8.1 8.1 0 0 0-10.5-4.4l-18.5 7.7a8 8 0 0 0 3.1 15.4zm-52.9-50.4a8.5 8.5 0 0 0 3.1.6 8.2 8.2 0 0 0 7.4-4.9l7.7-18.5a8.1 8.1 0 0 0-4.4-10.5 7.9 7.9 0 0 0-10.4 4.4l-7.7 18.4a8.1 8.1 0 0 0 4.3 10.5zM248 160a8 8 0 0 1-8 8H16a8 8 0 0 1 0-16h44.5a70.1 70.1 0 0 1-.5-8 68 68 0 0 1 136 0 70.1 70.1 0 0 1-.5 8H240a8 8 0 0 1 8 8zm-171.4-8h102.8a52.9 52.9 0 0 0 .6-8 52 52 0 0 0-104 0 52.9 52.9 0 0 0 .6 8zM208 192H48a8 8 0 0 0 0 16h160a8 8 0 0 0 0-16z" />
+                </svg>
+
+            </button>
+        </div>
+        <div class="text-center">
+            <p><img style="height:auto;border-radius: 50% !important;display: block;margin-left: auto;margin-right: auto;width: 30%;"
+                    alt="" width="260" height="260" class="avatar avatar-user width-full border color-bg-default"
+                    src="https://avatars.githubusercontent.com/u/8846092?v=4"></img></p>
+            <h1 class="text-2xl font-bold">Sebastian Humberg</h1>
+            <p class=" text-slate-800 dark:text-slate-200">MLOps Engineer</p>
+            <p class="dark:text-slate-400 text-slate-600 font-serif italic font-light">Hamburg, Germany</p>
+        </div>
+    </header>
+
+    <header id="fixed-header"
+        class="fixed hidden w-full top-0 left-0 bg-slate-50 dark:bg-slate-900 bg-opacity-90 backdrop-blur-md border-b dark:border-slate-800">
+        <div class="max-w-2xl mx-auto py-1 px-3 flex justify-between items-center">
+            <h1 class="font-semibold">Jordi Enric</h1>
+
+            <button id="theme-toggle" onclick="toggleTheme()"
+                class="hover p-2 rounded-full transition-all dark:text-slate-400 text-slate-700 opacity-80 hover:opacity-100">
+                <svg viewBox="0 0 256 256" class="w-6" astro-icon="ph:sun-horizon">
+                    <path fill="currentColor"
+                        d="M77.7 43.6a8.1 8.1 0 0 1 4.4-10.5 7.9 7.9 0 0 1 10.4 4.4l7.7 18.4a8.1 8.1 0 0 1-4.3 10.5 8.5 8.5 0 0 1-3.1.6 8.2 8.2 0 0 1-7.4-4.9zm-56.2 64.9 18.4 7.7a8.5 8.5 0 0 0 3.1.6 8 8 0 0 0 3.1-15.4l-18.5-7.7a8.1 8.1 0 0 0-10.5 4.4 7.9 7.9 0 0 0 4.4 10.4zm191.5 8.3a8.5 8.5 0 0 0 3.1-.6l18.4-7.7a7.9 7.9 0 0 0 4.4-10.4 8.1 8.1 0 0 0-10.5-4.4l-18.5 7.7a8 8 0 0 0 3.1 15.4zm-52.9-50.4a8.5 8.5 0 0 0 3.1.6 8.2 8.2 0 0 0 7.4-4.9l7.7-18.5a8.1 8.1 0 0 0-4.4-10.5 7.9 7.9 0 0 0-10.4 4.4l-7.7 18.4a8.1 8.1 0 0 0 4.3 10.5zM248 160a8 8 0 0 1-8 8H16a8 8 0 0 1 0-16h44.5a70.1 70.1 0 0 1-.5-8 68 68 0 0 1 136 0 70.1 70.1 0 0 1-.5 8H240a8 8 0 0 1 8 8zm-171.4-8h102.8a52.9 52.9 0 0 0 .6-8 52 52 0 0 0-104 0 52.9 52.9 0 0 0 .6 8zM208 192H48a8 8 0 0 0 0 16h160a8 8 0 0 0 0-16z" />
+                </svg>
+
+            </button>
+        </div>
+    </header>
+    <div id="swup" class="max-w-2xl mx-auto p-3">
+        <div aria-label="About me" class="space-y-12 mt-12">
+            <section>
+                <h2>Contact</h2>
+                <div class="mt-4 md:mt-0">
+                    <div class="flex gap-4 flex-wrap text-sm">
+
+                        <div class="flex gap-4">
+                            <a target="_blank"
+                                class="clean button whitespace-nowrap flex gap-2 px-3 py-2 rounded-xl items-center"
+                                href="https://github.com/shmbrg">
+                                <svg viewBox="0 0 16 16" class="w-5" astro-icon="bi:github">
+                                    <path fill="currentColor"
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                </svg>
+
+                                GitHub
+                            </a>
+                        </div>
+                        <div class="flex gap-4">
+                            <a target="_blank"
+                                class="clean button whitespace-nowrap flex gap-2 px-3 py-2 rounded-xl items-center"
+                                href="https://www.linkedin.com/in/sebastianhumberg/">
+                                <svg viewBox="0 0 16 16" class="w-5" astro-icon="bi:linkedin">
+                                    <path fill="currentColor"
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div class="flex gap-4">
+                            <a target="_blank"
+                                class="clean button whitespace-nowrap flex gap-2 px-3 py-2 rounded-xl items-center"
+                                href="mailto:sebastian.humberg@gmail.com">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                                </svg>
+
+                                Email
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <h2 class="">About</h2>
+                <div class="">
+                    <p>In a world driven by data-driven insights, I specialize in building bridges between cutting-edge data science innovations and tangible real-world outcomes. With a solid foundation in Data Science, Data Engineering, Machine Learning Engineering, and DevOps, I champion the concept of MLOps to ensure that machine learning models not only come to life but thrive in production environments.</p>
+					<p>🚀 Elevating ideas into action: With a deep-seated passion for turning ideas into actionable solutions, I navigate the intricate landscape of MLOps, where Data Science meets DevOps. My journey has been dedicated to orchestrating seamless transitions from model development to deployment, fostering innovation without compromising reliability.</p>
+					<p>💡 Illuminating the path to MLOps: Join me in exploring the realm of MLOps, where we unravel the strategies, tools, and best practices that transform machine learning projects into sustained success stories. From version control and automated testing to monitoring and scaling, I'm committed to shedding light on the path that leads to operational excellence.</p>
+					<p>📊 Data-driven decisions, powered by MLOps: Let's debunk the myth that deploying a model marks the finish line. In fact, it's only the beginning. MLOps ensures models remain relevant, adaptive, and efficient in ever-evolving environments. Together, we'll navigate the challenges and triumphs of maintaining models that drive data-driven decisions across industries.</p>
+					<p>🌐 Connecting the MLOps community: As a passionate advocate for MLOps, I'm dedicated to fostering a vibrant community where ideas flow, experiences are shared, and knowledge is amplified. Through insightful discussions, collaborative projects, and knowledge-sharing, let's propel MLOps to the forefront of data innovation.</p>
+
+                    <p>To reach Sebastian, please use email or linkedin.</p>
+                </div>
+            </section>
+            <!-- <section>
+			<h2>Work</h2>
+			<div>
+				<p>XX @ <a href="https://xx.com/">Company</a></p>
+				<p>XX @ <a href="https://xx.com/">Company</a></p>
+			</div>
+		</section> -->
+            <!-- <section>
+			<h2>Other</h2>
+			<div>
+				<p>XX/p>
+				<p>XX</p>
+			</div>
+		</section> -->
+
+            <footer class="max-w-2xl mx-auto px-4 mt-24 border-gray-800 pb-16 flex justify-between">
+                <div class="flex gap-2 items-start">
+
+                    <!-- <svg viewBox="0 0 256 256" class="w-6 opacity-50" astro-icon="ph:clock"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm0 192a88 88 0 1 1 88-88 88.1 88.1 0 0 1-88 88zm64-88a8 8 0 0 1-8 8h-56a8 8 0 0 1-8-8V72a8 8 0 0 1 16 0v48h48a8 8 0 0 1 8 8z"/></svg> -->
+
+                    <div class="flex flex-col text-slate-500 dark:text-slate-600">
+                        <p class="font-serif italic" style="font-size: 8px;">
+                            <a href="https://www.ericpeter.me/">Credit</a> for site design.
+                        </p>
+                        <!-- <p id="time" class="-mt-4"></p> -->
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+    </div>
+    <script type="module"
+        src="data:application/javascript;base64,aW1wb3J0IFN3dXAgZnJvbSAnc3d1cCcKaW1wb3J0IFN3dXBBMTF5UGx1Z2luIGZyb20gJ0Bzd3VwL2ExMXktcGx1Z2luJwppbXBvcnQgU3d1cEhlYWRQbHVnaW4gZnJvbSAnQHN3dXAvaGVhZC1wbHVnaW4nCmltcG9ydCBTd3VwU2xpZGVUaGVtZSBmcm9tICdAc3d1cC9zbGlkZS10aGVtZScKCmNvbnN0IHN3dXAgPSBuZXcgU3d1cCh7CiAgICBwbHVnaW5zOiBbbmV3IFN3dXBBMTF5UGx1Z2luKCksIG5ldyBTd3VwSGVhZFBsdWdpbigpLCBuZXcgU3d1cFNsaWRlVGhlbWUoKV0sCn0pCg=="></script>
+    <!-- Image thing -->
+    <script>
+
+        // Images
+
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach(img => {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+            img.addEventListener('click', () => {
+                img.classList.toggle('fullscreen')
+                document.body.toggle('overflow-hidden')
+            });
+        })
+
+
+        // -----------------
+
+        // Update time every 15s
+
+        let options = {
+            timeZone: 'Europe/Madrid',
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+        }
+        const time = document.getElementById('time')
+        const updateTime = () => {
+            time.innerText = new Date().toLocaleDateString([], options)
+        }
+        updateTime()
+        setInterval(updateTime, 15000)
+
+
+        // -----------------
+
+        // Show header on scroll
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('fixed-header')
+            if (window.scrollY > 173) {
+                header.classList.remove('hidden')
+            } else {
+                header.classList.add('hidden')
+            }
+        })
+
+
+        // -----------------
+
+        // Change theme
+
+        function toggleTheme() {
+            const button = document.querySelector('#theme-toggle')
+            button.classList.toggle('theme-dark')
+
+            const currentTheme = localStorage.getItem('theme')
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark'
+
+            localStorage.setItem('theme', newTheme)
+
+            if (newTheme === 'dark') {
+                document.documentElement.classList.add('dark')
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+        }
+
+    </script>
 </body>
-	
 
 </html>
